@@ -12,7 +12,7 @@ eval "$(starship init zsh)"
 bindkey -v
 
 # Sets custom aliases
-source ~/dotfiles/zsh/zsh-alias
+source ~/dotfiles/zsh/aliases.zsh
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
@@ -22,12 +22,12 @@ HISTFILE=~/.zsh_history
 setopt histignorealldups sharehistory
 
 # Use modern completion system
-autoload -Uz compinit
-compinit
+autoload -Uz compinit; compinit
 
-# Load
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# Plugins
+# Make sure to clone them from repo
+source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 
+source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -37,4 +37,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+source <(ng completion script) 2>/dev/null
