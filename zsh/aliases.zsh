@@ -1,2 +1,5 @@
 alias tmux='tmux -2'
 alias ll='ls -la'
+alias ls='ls --color=always'
+alias vi='nvim'
+alias bat='batcat'

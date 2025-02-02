@@ -37,4 +37,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # Load Angular CLI autocompletion.
-source <(ng completion script) 2>/dev/null
+# source <(ng completion script) 2>/dev/null
