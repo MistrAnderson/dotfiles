@@ -13,8 +13,8 @@ return {
     "hrsh7th/nvim-cmp",
   },
   init = function()
-		vim.opt.conceallevel = 1
-	end,
+    vim.opt.conceallevel = 1
+  end,
   opts = {
     workspaces = {
       {
@@ -29,6 +29,11 @@ return {
     completion = {
       nvim_cmp = true,
       min_chars = 2,
+    },
+    templates = {
+      folder = "Templates",
+      date_format = "%Y-%m-%d-%a",
+      time_format = "%H:%M",
     },
   },
 }
