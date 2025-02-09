@@ -39,7 +39,8 @@ setopt histignorealldups sharehistory
 # Use modern completion system
 autoload -Uz compinit; compinit
 
-# Plugins
+# -- PLUGINS -------------------------------------
+
 # Make sure to clone them from repo
 source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
@@ -48,8 +49,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Make Neovim work
-export PATH="$PATH:/opt/nvim-linux64/bin"
+# Add scripts to $PATH
+export PATH=$PATH:$HOME/code/scripts/python
+export PATH=$PATH:$HOME/code/scripts/bash
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script) 2>/dev/null
