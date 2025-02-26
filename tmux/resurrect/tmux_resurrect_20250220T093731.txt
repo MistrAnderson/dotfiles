@@ -1,0 +1,3 @@
+pane	dotfiles	1	1	:*	1	pop-os	:/home/mstrndrsn/dotfiles	1	zsh	:
+window	dotfiles	1	:zsh	1	:*	bd5d,211x54,0,0,0	:
+state	dotfiles	
