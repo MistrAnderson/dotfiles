@@ -1,2 +1,3 @@
 zsh/plugins/*
 tmux/plugins/*
+tmux/resurrect/
