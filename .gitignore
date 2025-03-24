@@ -1,3 +1,5 @@
 zsh/plugins/*
 tmux/plugins/*
 tmux/resurrect/*
+
+nvim/lazy-lock.json
