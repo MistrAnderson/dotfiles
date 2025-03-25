@@ -3,7 +3,7 @@ alias ll='ls -la'
 alias ls='ls --color=always'
 alias v='nvim'
 alias vi='nvim'
-# alias bat='batcat'
+alias bat='batcat'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
