@@ -14,6 +14,7 @@ fi
 autoload -U colors && colors
 
 eval "$(starship init zsh)"
+eval "$(thefuck --alias)"
 
 # -- AUDIO  --------------------------------------
 
@@ -40,6 +41,7 @@ setopt histignorealldups sharehistory
 autoload -Uz compinit; compinit
 
 export EDITOR=nvim
+export STARSHIP_CONFIG=~/.config/startship/starship.toml
 
 # -- PLUGINS -------------------------------------
 

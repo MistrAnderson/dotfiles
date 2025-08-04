@@ -22,6 +22,12 @@ return {
             require("luasnip").lsp_expand(args.body)
           end,
         },
+        -- for colors i guess ?
+        formatting = {
+          format = function(entry, item)
+            return require("nvim-highlight-colors").format(entry, item)
+          end
+        },
         window = {
           completion = cmp.config.window.bordered(),
           documentation = cmp.config.window.bordered(),
