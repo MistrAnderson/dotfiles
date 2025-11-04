@@ -7,6 +7,7 @@ alias vi='nvim'
 alias cl='clear'
 alias ct='change-theme-cli'
 alias ctm='change-theme-menu'
+alias vivaldi='vivaldi --ozone-platform=wayland --enable-features=UseOzonePlatform --use-cmd-decoder=validating --use-gl=desktop'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd

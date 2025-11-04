@@ -8,9 +8,7 @@
     "tray",
   ],
   "modules-center": [
-    "clock#clo2",
-    "mpris"
-    // "hyprland/window"
+    "clock#clo2"
   ],
   "modules-right": [
     "clock",
@@ -100,22 +98,7 @@
       "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
       "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
   },
-  "mpris": {
-        "format": "{player_icon}",
-        "format-paused": "{status_icon}",
-        "tooltip": false,
-        "player-icons": { 
-            "default": "\uf28b",
-            "mpv": "🎵"
-        },
-        "status-icons": {
-            "paused": "\uf144"
-        },
-        "on-click": "hyprmixer",
-        "max-length": 1000,
-        "interval": 1,
-    },
-  "custom/temperature": {
+    "custom/temperature": {
     "exec": "sensors | awk '/^Package id 0:/ {print int($4)}'",
     "format": " {}°C ",
     "interval": 5,
