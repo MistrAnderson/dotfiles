@@ -1,4 +1,4 @@
-@import url("./colors.css");
+@import url("../../.cache/hellwal/waybar-colors.css");
 
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
@@ -10,7 +10,7 @@
 
 window#waybar {
     background: rgba(26, 27, 38, 0.75);
-    color: @primary;
+    color: @cursor;
     font-family: 
         SpaceMono Nerd Font,
         feather;
@@ -85,7 +85,7 @@ window#waybar {
     feather;
   font-weight: 900;
   font-size: 13pt;
-  color: @primary;
+  color: @color7;
   border:none;
   border-radius: 15px;
 }
@@ -96,7 +96,7 @@ window#waybar {
 
 #workspaces button:hover {
   background: #11111b;
-  color: @primary_fixed;
+  color: @cursor;
   box-shadow: none;
 }
 
